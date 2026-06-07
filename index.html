@@ -57,7 +57,6 @@
         <li><a href="#home"      class="nav-link active" id="nav-beranda">Beranda</a></li>
         <li><a href="#profil"    class="nav-link"        id="nav-profil">Profil</a></li>
         <li><a href="#artefak"   class="nav-link"        id="nav-artefak">Artefak</a></li>
-        <li><a href="#lampiran"  class="nav-link"        id="nav-lampiran">Lampiran</a></li>
         <li><a href="#analisis"  class="nav-link"        id="nav-analisis">Analisis</a></li>
         <li><a href="#kompetensi" class="nav-link"       id="nav-kompetensi">Kompetensi</a></li>
       </ul>
@@ -463,8 +462,8 @@
           <div class="artefak-icon">🎮</div>
           <div class="artefak-badge">Media</div>
           <h3>Media Pembelajaran Interaktif</h3>
-          <p>Pengembangan media berbasis game digital untuk meningkatkan motivasi belajar peserta didik.</p>
-          <div class="artefak-tags"><span>Game</span><span>ZEP QUIZ</span></div>
+          <p>Pengembangan media Interaktif untuk meningkatkan motivasi belajar peserta didik.</p>
+          <div class="artefak-tags"><span>PPT</span><span>ZEP QUIZ</span></div>
         </a>
 
         <a href="javascript:void(0)" class="artefak-card" id="art-3">
@@ -475,7 +474,7 @@
           <div class="artefak-tags"><span>Portofolio</span><span>Siswa</span></div>
         </a>
 
-        <a href="javascript:void(0)" class="artefak-card" id="art-4">
+        <a href="penilaian.html" class="artefak-card" id="art-4">
           <div class="artefak-icon">⭐</div>
           <div class="artefak-badge">Penilaian</div>
           <h3>Penilaian GP dan DPL</h3>
@@ -483,43 +482,21 @@
           <div class="artefak-tags"><span>Refleksi</span><span>Penilaian</span></div>
         </a>
 
-        <a href="javascript:void(0)" class="artefak-card" id="art-5">
+        <a href="dokumentasi.html" class="artefak-card" id="art-5">
           <div class="artefak-icon">🎬</div>
-          <div class="artefak-badge">Video</div>
-          <h3>Video Pembelajaran</h3>
+          <div class="artefak-badge">Dokumentasi</div>
+          <h3>Dokumentasi Pembelajaran</h3>
           <p>Rekaman proses pembelajaran di kelas sebagai bagian dari dokumentasi praktik mengajar.</p>
-          <div class="artefak-tags"><span>Video</span><span>Praktik</span></div>
+          <div class="artefak-tags"><span>Dokumentasi</span><span>Praktik</span></div>
         </a>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════════
-       LAMPIRAN
-  ══════════════════════════════════════════════ -->
-  <section class="section" id="lampiran">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Dokumen</span>
-        <h2 class="section-title">Lampiran</h2>
-        <p class="section-desc">Dokumen dan lampiran pendukung yang relevan dengan portofolio PPG ini</p>
-      </div>
-      <div class="artefak-grid">
-        <a href="javascript:void(0)" class="artefak-card">
+        <a href="lkm.html" class="artefak-card" id="art-6">
           <div class="artefak-icon">📄</div>
-          <div class="artefak-badge">Penilaian</div>
-          <h3>Lampiran 7</h3>
-          <p>File penilaian dan dokumentasi asesmen pembelajaran</p>
-          <div class="artefak-tags"><span>Penilaian</span><span>Asesmen</span></div>
+          <div class="artefak-badge">LKM</div>
+          <h3>Lembar Kerja Murid</h3>
+          <p><strong>Arsip lembar kerja murid dalam pembelajaran statistika</strong>   <div class="artefak-tags"><span>LKM</span><span>Asesmen</span></div>
         </a>
-        <a href="javascript:void(0)" class="artefak-card">
-          <div class="artefak-icon">📊</div>
-          <div class="artefak-badge">Penilaian</div>
-          <h3>Lampiran 8</h3>
-          <p>File penilaian dan dokumentasi evaluasi pembelajaran</p>
-          <div class="artefak-tags"><span>Penilaian</span><span>Evaluasi</span></div>
-        </a>
+
       </div>
     </div>
   </section>
@@ -531,44 +508,108 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Refleksi</span>
-        <h2 class="section-title">Analisis</h2>
-        <p class="section-desc">Analisis reflektif terhadap perjalanan pembelajaran dan pengembangan profesionalisme</p>
+        <h2 class="section-title">Analisis Artefak</h2>
+        <p class="section-desc">Analisis kelebihan, kekurangan, dan landasan teori artefak pembelajaran</p>
       </div>
-      <div class="komp-grid">
-        <div class="komp-col">
-          <h3 class="komp-cat">💪 Kekuatan</h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-header"><span>Kemampuan Komunikasi</span><span class="skill-pct">90%</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+      
+      <!-- TAB NAVIGATION -->
+      <div class="tabs-nav reveal">
+        <button class="tab-btn active" data-target="tab-kelebihan">Kelebihan</button>
+        <button class="tab-btn" data-target="tab-kekurangan">Kekurangan</button>
+        <button class="tab-btn" data-target="tab-teori">Landasan Teori</button>
+      </div>
+
+      <!-- TAB CONTENT -->
+      <div class="tabs-content">
+        
+        <!-- Tab 1: Kelebihan -->
+        <div class="tab-panel active" id="tab-kelebihan">
+          <div class="profil-grid reveal">
+            <div class="profil-text">
+              <h3>Kelebihan Artefak Pembelajaran</h3>
+              <p>Artefak pembelajaran yang dikembangkan memiliki beberapa kelebihan yang mendukung efektivitas proses pembelajaran:</p>
+              <ul style="margin-left: 1.5rem; margin-top: 1rem; line-height: 1.8;">
+                <li style="margin-bottom: 0.8rem;"><strong>Kontekstual:</strong> Materi disajikan dengan mengaitkan pada situasi nyata yang dekat dengan kehidupan peserta didik, sehingga memudahkan pemahaman konsep.</li>
+                <li style="margin-bottom: 0.8rem;"><strong>Interaktif:</strong> Media pembelajaran berbasis game meningkatkan motivasi dan keterlibatan aktif peserta didik dalam proses pembelajaran.</li>
+                <li style="margin-bottom: 0.8rem;"><strong>Terstruktur:</strong> LKM dirancang dengan langkah-langkah yang jelas, membantu peserta didik memahami alur pembelajaran secara sistematis.</li>
+                <li style="margin-bottom: 0.8rem;"><strong>Inklusif:</strong> Artefak mempertimbangkan keberagaman kemampuan peserta didik, memberikan kesempatan untuk berkembang sesuai potensi masing-masing.</li>
+                <li style="margin-bottom: 0.8rem;"><strong>Asesmen Berkelanjutan:</strong> Instrumen penilaian terintegrasi dalam pembelajaran, memungkinkan monitoring perkembangan peserta didik secara berkelanjutan.</li>
+              </ul>
             </div>
-            <div class="skill-item">
-              <div class="skill-header"><span>Keterampilan Matematika</span><span class="skill-pct">92%</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header"><span>Adaptasi Karakter Siswa</span><span class="skill-pct">88%</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
-            </div>
-          </div>
-        </div>
-        <div class="komp-col">
-          <h3 class="komp-cat">📈 Pengembangan</h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-header"><span>Teknologi Pembelajaran</span><span class="skill-pct">75%</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header"><span>Strategi Asesmen</span><span class="skill-pct">80%</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header"><span>Kolaborasi Profesional</span><span class="skill-pct">85%</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            <div class="profil-image-wrap" style="min-height: 400px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 8px 32px hsl(258,60%,62%,0.08); position: relative; display: flex; flex-direction: column; background: var(--purple-soft); align-items: center; justify-content: center;">
+              <span style="font-size: 5rem;">✨</span>
+              <p style="color: var(--purple); font-weight: 600; text-align: center; padding: 1rem;">Kelebihan Artefak</p>
             </div>
           </div>
         </div>
+
+        <!-- Tab 2: Kekurangan -->
+        <div class="tab-panel" id="tab-kekurangan">
+          <div class="profil-grid reveal">
+            <div class="profil-text">
+              <h3>Kekurangan Artefak Pembelajaran</h3>
+              <p>Sebagai bagian dari refleksi profesional, berikut adalah beberapa kekurangan yang dapat menjadi bahan perbaikan:</p>
+              <ul style="margin-left: 1.5rem; margin-top: 1rem; line-height: 1.8;">
+                <li style="margin-bottom: 0.8rem;"><strong>Keterbatasan Waktu:</strong> Implementasi beberapa artefak membutuhkan waktu yang lebih panjang dari yang tersedia dalam satu pertemuan pembelajaran.</li>
+                <li style="margin-bottom: 0.8rem;"><strong>Ketergantungan Teknologi:</strong> Media pembelajaran berbasis digital memerlukan infrastruktur teknologi yang memadai di sekolah.</li>
+                <li style="margin-bottom: 0.8rem;"><strong>Differentiasi:</strong> Artefak belum sepenuhnya mengakomodasi perbedaan gaya belajar individual peserta didik secara optimal.</li>
+                <li style="margin-bottom: 0.8rem;"><strong>Evaluasi Formatif:</strong> Mekanisme feedback instan masih perlu diperkuat untuk memberikan respon yang lebih cepat kepada peserta didik.</li>
+                <li style="margin-bottom: 0.8rem;"><strong>Aksesibilitas:</strong> Beberapa materi mungkin memerlukan adaptasi tambahan untuk peserta didik dengan kebutuhan khusus.</li>
+              </ul>
+            </div>
+            <div class="profil-image-wrap" style="min-height: 400px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 8px 32px hsl(258,60%,62%,0.08); position: relative; display: flex; flex-direction: column; background: var(--purple-soft); align-items: center; justify-content: center;">
+              <span style="font-size: 5rem;">🔍</span>
+              <p style="color: var(--purple); font-weight: 600; text-align: center; padding: 1rem;">Area Perbaikan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Landasan Teori -->
+        <div class="tab-panel" id="tab-teori">
+          <div class="profil-grid reveal">
+            <div class="profil-text">
+              <h3>Landasan Teori Artefak</h3>
+              <p>Artefak pembelajaran dikembangkan berdasarkan beberapa landasan teori pendidikan:</p>
+              <div style="margin-top: 1.5rem;">
+                <div style="background: var(--bg-alt); padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--purple); margin-bottom: 1rem;">
+                  <h4 style="color: var(--purple); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">1. Teori Konstruktivisme</h4>
+                  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 0.8rem;">Konstruktivisme merupakan teori belajar yang memandang bahwa pengetahuan tidak dapat dipindahkan begitu saja dari guru kepada peserta didik, melainkan harus dibangun sendiri oleh peserta didik melalui pengalaman dan interaksi dengan lingkungannya. Menurut Piaget, proses belajar terjadi melalui asimilasi dan akomodasi terhadap pengalaman baru, sedangkan Vygotsky menekankan pentingnya interaksi sosial dalam membangun pengetahuan.</p>
+                  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 0.8rem;">Dalam pembelajaran statistika, teori konstruktivisme diterapkan melalui aktivitas pengumpulan data, diskusi kelompok, pengamatan pola data, serta penemuan konsep mean, median, modus, dan jangkauan secara mandiri. Guru berperan sebagai fasilitator yang memberikan pengalaman belajar bermakna sehingga peserta didik dapat membangun pemahamannya sendiri.</p>
+                  <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);"><strong>Implikasi dalam Pembelajaran:</strong> Peserta didik aktif membangun konsep statistika, Guru menjadi fasilitator pembelajaran, Pengetahuan diperoleh melalui pengalaman langsung, Kesalahan dipandang sebagai bagian dari proses belajar.</p>
+                </div>
+                <div style="background: var(--bg-alt); padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--purple); margin-bottom: 1rem;">
+                  <h4 style="color: var(--purple); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">2. Problem Based Learning (PBL)</h4>
+                  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 0.8rem;">Problem Based Learning (PBL) merupakan model pembelajaran yang menggunakan masalah nyata sebagai titik awal pembelajaran untuk mengembangkan kemampuan berpikir kritis, pemecahan masalah, kolaborasi, dan komunikasi. Menurut Arends (2012), PBL membantu peserta didik mengembangkan keterampilan berpikir tingkat tinggi melalui penyelidikan terhadap masalah autentik.</p>
+                  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 0.8rem;">Dalam modul ini, peserta didik dihadapkan pada berbagai masalah kontekstual, seperti analisis data kecelakaan, pencarian data yang hilang, serta analisis perubahan dan gabungan data. Melalui proses tersebut, peserta didik belajar menggunakan konsep statistika untuk menemukan solusi terhadap masalah yang diberikan.</p>
+                  <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);"><strong>Karakteristik PBL:</strong> Berawal dari masalah nyata, Berpusat pada peserta didik, Mendorong investigasi dan penyelidikan, Mengembangkan kemampuan berpikir kritis, Menghasilkan solusi atau produk pembelajaran.</p>
+                </div>
+                <div style="background: var(--bg-alt); padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--purple); margin-bottom: 1rem;">
+                  <h4 style="color: var(--purple); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">3. Discovery Learning</h4>
+                  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 0.8rem;">Discovery Learning adalah model pembelajaran yang menekankan proses menemukan konsep secara mandiri melalui kegiatan mengamati, mengidentifikasi masalah, mengumpulkan data, mengolah data, membuktikan, dan menarik kesimpulan. Menurut Bruner, pembelajaran akan lebih bermakna apabila peserta didik menemukan sendiri konsep yang dipelajari.</p>
+                  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 0.8rem;">Pada pembelajaran statistika, peserta didik tidak langsung diberikan rumus mean, median, modus, dan jangkauan, tetapi diarahkan untuk menemukan konsep tersebut melalui analisis data dan diskusi kelompok. Proses ini membantu peserta didik memahami konsep secara lebih mendalam dan tahan lama.</p>
+                  <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);"><strong>Tahapan Discovery Learning:</strong> Stimulation (Pemberian rangsangan), Problem Statement (Identifikasi masalah), Data Collection (Pengumpulan data), Data Processing (Pengolahan data), Verification (Pembuktian), Generalization (Menarik kesimpulan).</p>
+                </div>
+                <div style="background: var(--bg-alt); padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--purple); margin-bottom: 1rem;">
+                  <h4 style="color: var(--purple); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">4. Teori Multiple Intelligences</h4>
+                  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 0.8rem;">Teori Multiple Intelligences dikemukakan oleh Howard Gardner yang menyatakan bahwa setiap individu memiliki kecerdasan yang beragam dan unik. Gardner mengidentifikasi sedikitnya delapan jenis kecerdasan: Linguistik, Logis-Matematis, Visual-Spasial, Kinestetik, Musikal, Interpersonal, Intrapersonal, dan Naturalis.</p>
+                  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 0.8rem;">Penerapan teori ini dalam pembelajaran statistika terlihat melalui penggunaan berbagai aktivitas belajar yang memungkinkan peserta didik menunjukkan kecerdasannya masing-masing. Diskusi kelompok mengembangkan kecerdasan interpersonal, presentasi melatih kecerdasan linguistik, pengolahan data mengembangkan kecerdasan logis-matematis, sedangkan penggunaan media visual dan digital mendukung kecerdasan visual-spasial.</p>
+                  <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);"><strong>Implikasi dalam Pembelajaran:</strong> Guru menyediakan variasi aktivitas belajar, Memberikan kesempatan kepada setiap peserta didik untuk menunjukkan potensinya, Mengakomodasi keberagaman gaya belajar, Meningkatkan partisipasi aktif seluruh peserta didik.</p>
+                </div>
+                <div style="background: var(--bg-alt); padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--purple);">
+                  <h4 style="color: var(--purple); margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">5. Pembelajaran Mendalam (Deep Learning)</h4>
+                  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 0.8rem;">Pembelajaran Mendalam merupakan pendekatan pembelajaran yang berfokus pada pemahaman konseptual yang kuat, keterkaitan antar konsep, refleksi, serta penerapan pengetahuan dalam situasi nyata. Peserta didik tidak hanya menghafal informasi, tetapi mampu memahami makna, menerapkan, menganalisis, dan merefleksikan pembelajaran.</p>
+                  <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 0.8rem;">Dalam modul ini, Pembelajaran Mendalam diwujudkan melalui tiga proses utama: <strong>Mindful Learning</strong> (peserta didik belajar dengan penuh kesadaran), <strong>Meaningful Learning</strong> (pembelajaran dikaitkan dengan konteks kehidupan nyata), dan <strong>Joyful Learning</strong> (peserta didik belajar dalam suasana menyenangkan).</p>
+                  <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);"><strong>Karakteristik Pembelajaran Mendalam:</strong> Berpusat pada peserta didik, Mengembangkan kemampuan berpikir kritis, Menghubungkan pembelajaran dengan kehidupan nyata, Menekankan refleksi dan pemaknaan, Mengembangkan kompetensi abad ke-21.</p>
+                </div>
+              </div>
+            </div>
+            <div class="profil-image-wrap" style="min-height: 400px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 8px 32px hsl(258,60%,62%,0.08); position: relative; display: flex; flex-direction: column; background: var(--purple-soft); align-items: center; justify-content: center;">
+              <span style="font-size: 5rem;">📚</span>
+              <p style="color: var(--purple); font-weight: 600; text-align: center; padding: 1rem;">Landasan Teori</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -721,5 +762,8 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
 
 

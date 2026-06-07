@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=1200" />
-  <title>Media Pembelajaran – Portofolio Satriya</title>
-  <meta name="description" content="Media Pembelajaran untuk melengkapi kebutuhan kelas" />
+  <title>Lembar Kerja Murid – Portofolio PPG Prajabatan 2026</title>
+  <meta name="description" content="Lembar Kerja Murid (LKM) untuk pembelajaran statistika kelas VIII SMP" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
@@ -21,23 +21,57 @@
       border-radius: 99px; border: 1.5px solid var(--border);
     }
     .back-btn:hover { color: var(--purple); border-color: var(--purple-light); transform: translateY(-2px); }
-    .media-container {
+    .lkm-container {
       background: var(--white);
       border-radius: var(--radius-lg);
       padding: 3rem;
       box-shadow: var(--shadow-md);
       border: 1px solid var(--border);
     }
-    .media-header { margin-bottom: 3rem; border-bottom: 2px solid var(--border); padding-bottom: 2rem; }
+    .lkm-header { margin-bottom: 3rem; border-bottom: 2px solid var(--border); padding-bottom: 2rem; }
     .section-tag {
       display: inline-block; background: var(--purple-soft); color: var(--purple);
       border: 1px solid var(--border); padding: 0.28rem 1rem; border-radius: 99px;
       font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 1rem;
     }
-    .media-header h1 { font-family: 'Outfit', sans-serif; font-size: 2.2rem; color: var(--dark); margin-bottom: 1rem; }
-    .media-meta { display: flex; gap: 1.5rem; color: var(--text-muted); font-size: 0.9rem; font-weight: 500; }
+    .lkm-header h1 { font-family: 'Outfit', sans-serif; font-size: 2.2rem; color: var(--dark); margin-bottom: 1rem; }
+    .lkm-meta { display: flex; gap: 1.5rem; color: var(--text-muted); font-size: 0.9rem; font-weight: 500; }
     
-    .preview-box {
+    .lkm-info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .info-card {
+      background: var(--purple-bg);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      transition: var(--transition);
+    }
+    .info-card:hover {
+      border-color: var(--purple-light);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px hsl(258,60%,62%,0.1);
+    }
+    .info-card h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.3rem;
+      color: var(--purple);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .info-card p {
+      color: var(--text-muted);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+    
+    .lkm-preview {
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
@@ -90,6 +124,41 @@
       box-shadow: 0 8px 20px hsl(258,60%,62%,0.3);
     }
     
+    .lkm-features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .feature-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .feature-item:hover {
+      border-color: var(--purple-light);
+      transform: translateY(-3px);
+    }
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--purple);
+    }
+    .feature-item h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      color: var(--dark);
+      margin-bottom: 0.5rem;
+    }
+    .feature-item p {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    
     @keyframes pulse {
       0% { transform: scale(1); opacity: 0.8; }
       100% { transform: scale(1.1); opacity: 1; }
@@ -114,7 +183,7 @@
       </div>
       <p class="preloader-hint">Memuat Portofolio...</p>
     </div>
-    <div class="preloader-bg-text">matematika</div>
+    <div class="preloader-bg-text">MATEMATIKA</div>
   </div>
 
   <div class="page-transition" id="pageTransition"></div>
@@ -143,33 +212,62 @@
     <div class="container">
       <a href="index.html#artefak" class="back-btn">← Kembali ke Artefak</a>
       
-      <div class="media-container">
-        <div class="media-header">
-          <span class="section-tag">Media Pembelajaran</span>
-          <h1>Media Pembelajaran Interaktif</h1>
-          <div class="media-meta">
+      <div class="lkm-container">
+        <div class="lkm-header">
+          <span class="section-tag">Lembar Kerja Murid</span>
+          <h1>LKM Statistika Kelas VIII SMP</h1>
+          <div class="lkm-meta">
             <span>📅 2026</span>
-            <span>📂 Media Interaktif</span>
-            <span>🎮 ZEP Quiz</span>
+            <span>📂 Matematika</span>
+            <span>📄 Pembelajaran Mendalam</span>
           </div>
         </div>
 
-        <div class="media-content">
+        <div class="lkm-content">
           <p style="color: var(--text); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-            Media pembelajaran interaktif menggunakan platform digital untuk meningkatkan motivasi dan keterlibatan peserta didik selama proses pembelajaran. Media ini dirancang khusus untuk membuat konsep yang sulit menjadi lebih menyenangkan untuk dipelajari.
+            Lembar Kerja Murid (LKM) ini disusun untuk mendukung pembelajaran statistika kelas VIII SMP melalui pendekatan Pembelajaran Mendalam. Kegiatan LKM dikaitkan dengan situasi nyata di sekitar murid seperti pemilihan ketua OSIS, tinggi badan, pembagian sandwich, wisata religi Sunan Giri, dan data kehidupan sehari-hari lainnya.
           </p>
 
-          <div class="preview-box">
+          <div class="lkm-info-grid">
+            <div class="info-card">
+              <h3><i class="fas fa-bullseye"></i> Tujuan Pembelajaran</h3>
+              <p>Membantu murid memahami dan menerapkan konsep statistika secara bermakna melalui kegiatan eksplorasi dan pemecahan masalah. Selain mengembangkan kemampuan menghitung dan menganalisis data, LKM juga dirancang untuk melatih penalaran kritis, kolaborasi, komunikasi, dan kemampuan mengambil keputusan berdasarkan data kontekstual.</p>
+            </div>
+            <div class="info-card">
+              <h3><i class="fas fa-lightbulb"></i> Konteks Pembelajaran</h3>
+              <p>LKM ini menggunakan pendekatan kontekstual dengan mengaitkan materi statistika pada situasi nyata yang dekat dengan kehidupan peserta didik. Setiap kegiatan dirancang untuk menghubungkan konsep abstrak statistika dengan pengalaman konkret yang relevan.</p>
+            </div>
+          </div>
+
+          <div class="lkm-features">
+            <div class="feature-item">
+              <div class="feature-icon">📊</div>
+              <h4>Analisis Data</h4>
+              <p>Kegiatan pengolahan dan analisis data statistik</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🧩</div>
+              <h4>Pemecahan Masalah</h4>
+              <p>Penerapan statistika dalam situasi nyata</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🤝</div>
+              <h4>Kolaborasi</h4>
+              <p>Kerja kelompok dalam menyelesaikan tugas</p>
+            </div>
+          </div>
+
+          <div class="lkm-preview">
             <div class="preview-header">
-              <h3>Preview Media Pembelajaran</h3>
-              <a href="assets/docs/Media_Statistika_8.pdf" class="btn-download" target="_blank">
+              <h3>Preview Lembar Kerja Murid</h3>
+              <a href="assets/docs/LKM.pdf" class="btn-download" target="_blank">
                 <i class="fas fa-download"></i>
-                Download Media
+                Download LKM
               </a>
             </div>
             <div class="pdf-container">
-              <iframe src="assets/docs/Media_Statistika_8.pdf" type="application/pdf">
-                <p>Browser Anda tidak mendukung preview PDF. <a href="assets/docs/Media_Statistika_8.pdf" target="_blank">Klik di sini untuk mengunduh file</a>.</p>
+              <iframe src="assets/docs/LKM.pdf" type="application/pdf">
+                <p>Browser Anda tidak mendukung preview PDF. <a href="assets/docs/LKM.pdf" target="_blank">Klik di sini untuk mengunduh file</a>.</p>
               </iframe>
             </div>
           </div>
