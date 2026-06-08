@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1200" />
+  <title>Hasil Kerja Murid – Portofolio PPG Prajabatan 2026</title>
+  <meta name="description" content="Contoh hasil kerja murid dalam pembelajaran statistika" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=6" />
+  <link rel="icon" type="image/png" href="Logo_UMG.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    .detail-section { padding: 9rem 2rem 5rem; min-height: 80vh; background: var(--bg-alt); }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      color: var(--text-muted); text-decoration: none; font-weight: 600;
+      margin-bottom: 2rem; transition: var(--transition);
+      background: var(--white); padding: 0.6rem 1.2rem;
+      border-radius: 99px; border: 1.5px solid var(--border);
+    }
+    .back-btn:hover { color: var(--purple); border-color: var(--purple-light); transform: translateY(-2px); }
+    .hasil-container {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
+    }
+    .hasil-header { margin-bottom: 3rem; border-bottom: 2px solid var(--border); padding-bottom: 2rem; }
+    .section-tag {
+      display: inline-block; background: var(--purple-soft); color: var(--purple);
+      border: 1px solid var(--border); padding: 0.28rem 1rem; border-radius: 99px;
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 1rem;
+    }
+    .hasil-header h1 { font-family: 'Outfit', sans-serif; font-size: 2.2rem; color: var(--dark); margin-bottom: 1rem; }
+    .hasil-meta { display: flex; gap: 1.5rem; color: var(--text-muted); font-size: 0.9rem; font-weight: 500; }
+    
+    .hasil-info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .info-card {
+      background: var(--purple-bg);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      transition: var(--transition);
+    }
+    .info-card:hover {
+      border-color: var(--purple-light);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px hsl(258,60%,62%,0.1);
+    }
+    .info-card h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.3rem;
+      color: var(--purple);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .info-card p {
+      color: var(--text-muted);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+    
+    .hasil-preview {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+    .pdf-container {
+      width: 100%;
+      height: 700px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--bg-alt);
+    }
+    .pdf-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .preview-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--border);
+    }
+    .preview-header h3 {
+      font-family: 'Outfit', sans-serif;
+      color: var(--dark);
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--purple);
+      color: var(--white);
+      padding: 1rem 2rem;
+      border-radius: 99px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+    }
+    .btn-download:hover {
+      background: var(--purple-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px hsl(258,60%,62%,0.3);
+    }
+  </style>
+</head>
+<body>
+  <!-- ══════════════════════════════════════════════
+       PRELOADER / INTRO ANIMATION
+  ══════════════════════════════════════════════ -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <img src="Logo_UMG.png" alt="Logo UMG" class="preloader-logo-img" />
+      </div>
+      <div class="preloader-text">
+        <span class="preloader-name">Inti Rakhmawati</span>
+        <span class="preloader-sub">PPG Prajabatan 2026</span>
+      </div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar" id="preloaderBar"></div>
+      </div>
+      <p class="preloader-hint">Memuat Portofolio...</p>
+    </div>
+    <div class="preloader-bg-text">MATEMATIKA</div>
+  </div>
+
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- NAVBAR (REUSED) -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html#home" class="nav-brand">
+        <img src="Logo_UMG.png" alt="Logo UMG" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="nav-logo-icon" aria-label="Logo universitas" style="display: none;">🏛️</div>
+        <div class="nav-brand-text">
+          <span class="nav-univ">Universitas Muhammadiyah Gresik</span>
+          <span class="nav-sub">PPG Prajabatan 2026</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#home" class="nav-link">Beranda</a></li>
+        <li><a href="index.html#profil" class="nav-link">Profil</a></li>
+        <li><a href="index.html#artefak" class="nav-link">Artefak</a></li>
+        <li><a href="index.html#kontak" class="btn-hubungi">Hubungi Saya</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="detail-section page-enter">
+    <div class="container">
+      <a href="index.html#artefak" class="back-btn">← Kembali ke Artefak</a>
+      
+      <div class="hasil-container">
+        <div class="hasil-header">
+          <span class="section-tag">Hasil Kerja</span>
+          <h1>Contoh Hasil Kerja Murid</h1>
+          <div class="hasil-meta">
+            <span>📅 2026</span>
+            <span>📂 Matematika</span>
+            <span>📊 Statistika</span>
+          </div>
+        </div>
+
+        <div class="hasil-content">
+          <p style="color: var(--text); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+            Berikut adalah contoh hasil kerja murid dalam pembelajaran statistika kelas VIII SMP. Artefak ini menunjukkan capaian kompetensi peserta didik dalam memahami konsep mean, median, modus, dan jangkauan melalui kegiatan pengolahan data nyata.
+          </p>
+
+          <div class="hasil-info-grid">
+            <div class="info-card">
+              <h3><i class="fas fa-clipboard-check"></i> Kompetensi Tercapai</h3>
+              <p>Hasil kerja murid menunjukkan pemahaman konsep statistika dasar, kemampuan menghitung ukuran pemusatan data, dan keterampilan menganalisis data sederhana dari situasi nyata.</p>
+            </div>
+            <div class="info-card">
+              <h3><i class="fas fa-lightbulb"></i> Konteks Pembelajaran</h3>
+              <p>Artefak dihasilkan melalui kegiatan pembelajaran statistika dengan pendekatan kontekstual, menggunakan data dari situasi nyata seperti nilai ujian, tinggi badan, dan data kehidupan sehari-hari.</p>
+            </div>
+          </div>
+
+          <div class="hasil-preview">
+            <div class="preview-header">
+              <h3>Preview Artefak Murid</h3>
+              <a href="assets/docs/Artefak_murid.pdf" class="btn-download" target="_blank">
+                <i class="fas fa-download"></i>
+                Download Artefak
+              </a>
+            </div>
+            <div class="pdf-container">
+              <iframe src="assets/docs/Artefak_murid.pdf" type="application/pdf">
+                <p>Browser Anda tidak mendukung preview PDF. <a href="assets/docs/Artefak_murid.pdf" target="_blank">Klik di sini untuk mengunduh file</a>.</p>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 <strong>Inti Rakhmawati</strong> · PPG Prajabatan Universitas Muhammadiyah Gresik</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
